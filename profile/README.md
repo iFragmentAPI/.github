@@ -1,12 +1,12 @@
 # Fragment API Bot for Telegram Stars, Premium & Gifts
 
-Get a TGTools API key from [@ifragmentapibot](https://t.me/ifragmentapibot). Open the bot and send `/start`. **API key issuance is free, with no subscription or KYC required to get a key.** Purchases are charged to your funded TGTools wallet.
+Get a TGTools API key from [@ifragmentapibot](https://t.me/ifragmentapibot?start=github). Open the bot and send `/start`. **API key issuance is free, with no subscription or KYC required to get a key.** Purchases are charged to your funded TGTools wallet.
 
-[**Start the Telegram bot**](https://t.me/ifragmentapibot) · [**Read the API docs**](https://tg-tools.shop/api-docs) · [**Visit TGTools**](https://tg-tools.shop/)
+[**Start the Telegram bot**](https://t.me/ifragmentapibot?start=github) · [**Read the API docs**](https://tg-tools.shop/api-docs) · [**Visit TGTools**](https://tg-tools.shop/)
 
 ## Get your API key
 
-1. Open [@ifragmentapibot](https://t.me/ifragmentapibot) and tap **Start** or send `/start`.
+1. Open [@ifragmentapibot](https://t.me/ifragmentapibot?start=github) and tap **Start** or send `/start`.
 2. Follow the bot prompts to get your key.
 3. Store the key on your server and send it in the `X-Api-Key` header. Keep it out of client code, logs, and public repositories.
 4. Check live prices and validate the recipient before creating an order. Fund your wallet before submitting a purchase.
@@ -22,6 +22,12 @@ Get a TGTools API key from [@ifragmentapibot](https://t.me/ifragmentapibot). Ope
 | Wallet and orders | Check your balance, deposit history, and order status. |
 
 ## Try a read-only request
+
+Run the [Python quickstart](quickstart.py) with a Telegram username to check live Stars pricing and look up the recipient. It needs Python 3.9 or newer and uses only the standard library.
+
+```bash
+python3 quickstart.py TELEGRAM_USERNAME
+```
 
 Set `TGTOOLS_API_KEY` in your shell using the key from the bot. This authenticated request checks your wallet balance.
 
